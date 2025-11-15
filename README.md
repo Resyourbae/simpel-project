@@ -1,74 +1,37 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-# 🚀 Cara Setup Project Laravel
+# Cara Setup Project
 
-Untuk menjalankan project ini di komputer kamu, ikuti langkah singkat berikut:
+Clone repo:
+git clone https://github.com/username/nama-repo.git
+cd nama-repo
 
-1. **Clone Repository**
-   ```bash
-   git clone https://github.com/username/nama-repo.git
-   cd nama-repo
-
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-
-Install Composer Dependencies
-
+Install composer:
 composer install
 
-
-Install Node Modules
-Jalankan perintah berikut (gunakan CMD jika PowerShell error):
-
+Install node modules (kalau error di PowerShell, pakai CMD):
 npm install
 
+Buat file .env:
+PowerShell: cp .env.example .env
+CMD: copy .env.example .env
 
-Setup File .env
-Duplikasi file .env.example menjadi .env:
-
-PowerShell:
-
-cp .env.example .env
-
-
-CMD:
-
-copy .env.example .env
-
-
-Lalu sesuaikan database:
-
+Atur database di file .env:
 DB_DATABASE=nama_database
 DB_USERNAME=root
 DB_PASSWORD=
 
-
-Generate App Key
-
+Generate key:
 php artisan key:generate
 
-
-Migrasi Database
-
+Migrasi database:
 php artisan migrate
 
-
-Jalankan Server Laravel
-
+Jalankan server Laravel:
 php artisan serve
 
-
-Akses di:
-http://127.0.0.1:8000
-
-Jalankan Vite (Frontend)
-
+Jalankan Vite:
 npm run dev
 
+Selesai, project siap dipakai.
 
-🎉 Selesai!
-Project siap dijalankan sepenuhnya.
