@@ -1,37 +1,45 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-# Cara Setup Project
+<div align="center">
 
-Clone repo:
+# 📚 Project Setup Guide  
+### Laravel + Vite + Node Modules  
+✨ Ikuti instruksi di bawah untuk menjalankan project tanpa error. Semua langkah sudah disatukan agar mudah dipahami. ✨
+
+</div>
+
+```bash
+# 🛠️ Setup Step-by-Step (All-in-One Block)
+
+# Clone repository
 git clone https://github.com/username/nama-repo.git
 cd nama-repo
 
-Install composer:
+# Install composer dependencies
 composer install
 
-Install node modules (kalau error di PowerShell, pakai CMD):
+# Install node modules (gunakan CMD jika PowerShell error)
 npm install
 
-Buat file .env:
-PowerShell: cp .env.example .env
-CMD: copy .env.example .env
+# Copy file environment
+# PowerShell:
+cp .env.example .env
+# CMD:
+copy .env.example .env
 
-Atur database di file .env:
+# Set database environment
 DB_DATABASE=nama_database
 DB_USERNAME=root
 DB_PASSWORD=
 
-Generate key:
+# Generate Laravel application key
 php artisan key:generate
 
-Migrasi database:
+# Jalankan migrasi database
 php artisan migrate
 
-Jalankan server Laravel:
-php artisan serve
+# Jalankan server Laravel
+php artisan serve   # akses: http://127.0.0.1:8000
 
-Jalankan Vite:
+# Jalankan Vite (frontend)
 npm run dev
-
-Selesai, project siap dipakai.
-
